@@ -7,8 +7,9 @@
 <body>
     <script>
         $.getJSON("http://localhost:8080/api/article/get/address/", function (data) {
+            document.write('{"results":');
             document.write(JSON.stringify(data));
-           
+           document.write('}');
         });
     </script>
 </body>
